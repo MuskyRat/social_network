@@ -1,0 +1,16 @@
+.wrapper {
+    width: 98vw;
+    height: 98vh;
+    background: linear-gradient(to right bottom, #2a2a2a, 10%, rgba(255,171,15,0.8));
+    position: relative;
+    margin: 1vh 1vw;
+    border: 1px solid black;
+}
+
+.wrapper img {
+    position: absolute;
+    border-radius: 30px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

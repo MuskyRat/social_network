@@ -1,0 +1,7 @@
+.wrapper img {
+    width: 70px;
+}
+
+.container {
+    display: flex;
+}

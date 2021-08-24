@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+
+.wrapper {
+    /*display: flex;*/
+    /*width: 100%;*/
+    /*height: 50px;*/
+    /*justify-content: center;*/
+    position: relative;
+}
+
+
+.input,
+.span {
+    margin-top: 35px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.span span {
+    cursor: pointer;
+}
+
+.input input {
+    outline: none;
+    border: 1px silver solid;
+    border-radius: 30px;
+    padding: 3px 8px;
+    font-family: Montserrat, sans-serif;
+    font-size: 17px;
+    text-align: center;
+    width: 650px;
+}

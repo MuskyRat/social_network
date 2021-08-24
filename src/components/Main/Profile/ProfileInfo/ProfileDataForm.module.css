@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+
+
+.wrapper {
+    font-family: Montserrat, sans-serif;
+}
+
+.wrapper input:focus,
+.wrapper textarea:focus {
+    outline: none;
+    box-shadow: 0 0 10px grey;
+}
+
+.fullName {
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+.fullName input {
+    font-size: 25px;
+    font-family: Montserrat, sans-serif;
+    text-align: center;
+    outline: none;
+    border: 1px silver solid;
+    border-radius: 30px;
+    transition: .4s;
+}
+
+.lineContainer,
+.lineContainer2 {
+    padding: 0 300px;
+}
+
+.lineContainer2 {
+    padding-top: 20px;
+}
+
+.line,
+.line2 {
+    background: silver;
+    height: 1px;
+    max-width: 100%;
+}
+
+.item {
+    text-align: center;
+    padding: 20px 0 0 0;
+    font-size: 17px;
+    position: relative;
+}
+
+.item .content {
+    padding: 5px 0 0 0;
+}
+
+.item .content textarea {
+    border: 1px silver solid;
+    resize: none;
+    border-radius: 30px;
+    padding: 0 20px;
+    font-size: 17px;
+    text-align: center;
+    outline: none;
+    font-family: Montserrat, sans-serif;
+    transition: .4s;
+}
+
+.checkbox {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+}
+
+.checkboxSpan {
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    background: white;
+    border: 1px silver solid;
+    border-radius: 7px;
+    left: 900px;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.checkbox:checked + .checkboxSpan::before {
+    content: '';
+    position: absolute;
+    background: black;
+    width: 8px;
+    height: 3px;
+    transform: rotate(45deg);
+    top: 11px;
+    left: 0;
+}
+
+.checkbox:checked + .checkboxSpan::after {
+    content: '';
+    position: absolute;
+    background: black;
+    width: 15px;
+    height: 3px;
+    transform: rotate(-45deg);
+    top: 8px;
+    left: 3px;
+}
+
+.checkbox:focus + .checkboxSpan {
+    box-shadow: 0 0 5px grey;
+}
+
+.contact {
+    padding: 3px 250px 0 250px;
+    position: relative;
+    text-align: left;
+}
+
+.titleSpan {
+    position: absolute;
+    right: 53%;
+    padding-top: 4px;
+}
+
+.contact input {
+    border: 1px silver solid;
+    font-family: Montserrat, sans-serif;
+    border-radius: 30px;
+    padding: 3px 8px;
+    font-size: 17px;
+    margin-left: 46%;
+    width: 500px;
+    outline: none;
+    transition: .4s;
+}
+
+.button {
+    text-align: center;
+    padding: 10px 0 0 0;
+}
+
+.button button {
+    background: whitesmoke;
+    padding: 5px 15px;
+    border-radius: 30px;
+    border: 2px rgba(255,171,15,0.8) solid;
+    transition: 0.4s;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: Montserrat, sans-serif;
+}
+
+.button button:focus {
+    outline-offset: 2px;
+    outline-color: darkgoldenrod;
+    transition: .5s;
+    outline-width: medium;
+}

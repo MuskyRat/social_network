@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+
+.wrapper {
+    padding: 30px;
+    justify-content: center;
+    display: flex;
+}
+
+.pageNumber {
+    font-family: Montserrat, sans-serif;
+    border: 1px solid silver;
+    padding: 5px;
+    margin: 0 5px;
+    min-width: 30px;
+    min-height: 30px;
+    cursor: pointer;
+    border-radius: 30px;
+    background: whitesmoke;
+    outline: none;
+    font-size: 17px;
+}
+
+.pageNumber:focus {
+    box-shadow: 0 0 10px grey;
+}
+
+.activePage {
+    font-weight: bold;
+    background: white;
+    box-shadow: 0 0 10px grey;
+}
+
+.pages {
+    display: flex;
+}
+
+.prev button,
+.next button {
+    border: 1px rgba(255,171,15,0.8) solid;
+    border-radius: 30px;
+    cursor: pointer;
+    background: whitesmoke;
+    font-family: Montserrat, sans-serif;
+    font-size: 17px;
+    padding: 5px 10px;
+    min-height: 30px;
+    transition: 0.3s;
+}
+
+.prev button:hover,
+.next button:hover {
+    border-color: whitesmoke;
+}
+
+.prev button:active,
+.next button:active {
+    background: #e9e9e9;
+    border-color: #e9e9e9;
+}
+
+.prev button:focus,
+.next button:focus {
+    outline-offset: 2px;
+    outline-color: darkgoldenrod;
+    transition: .5s;
+    outline-width: medium;
+}

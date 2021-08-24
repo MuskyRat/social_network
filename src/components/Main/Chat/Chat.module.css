@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+
+.wrapper {
+    font-family: Montserrat, sans-serif;
+    height: 500px;
+    position: relative;
+}
+
+
+
+.messagesWrapper {
+    padding: 16px 20px 12px 20px;
+}
+
+.messages {
+    padding: 20px 20px 0 20px;
+    height: 660px;
+    overflow-y: auto;
+    background: whitesmoke;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.messages::-webkit-scrollbar {
+    width: 15px;
+}
+
+.messages::-webkit-scrollbar-track {
+    background: rgba(175,175,175,0.2);
+}
+
+.messages::-webkit-scrollbar-thumb {
+    background: rgba(175,175,175,0.6);
+    border-radius: 7px;
+    border: 1px solid rgba(175,175,175,0.2);
+    box-shadow: 0 0 2px rgba(0, 0, 0, .2) inset;
+}
+
+.messages::-webkit-scrollbar-thumb:hover {
+    background: rgba(175,175,175,0.7);
+}
+
+.messages::-webkit-scrollbar-thumb:active {
+    background: rgba(175,175,175,0.8);
+}
+
+.message {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.info {
+    position: relative;
+    padding: 10px 0 10px 10px;
+    width: 20%;
+    background: rgba(211,211,211,0.2);
+    border-top-left-radius: 30px;
+}
+
+.text {
+    width: 80%;
+    background: rgba(211,211,211,0.2);
+    padding-top: 10px;
+    border-bottom-right-radius: 15px;
+    font-size: 18px;
+}
+
+.info img {
+    width: 50px;
+    border-radius: 15px;
+}
+
+.info a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.info a:focus {
+    outline-offset: 2px;
+    outline-color: goldenrod;
+    transition: .5s;
+    outline-width: medium;
+}
+
+.info b {
+    padding-bottom: 5px;
+    position: absolute;
+    left: 80px;
+    top: 10px;
+}
+
+.formWrapper {
+    padding: 0 20px 6px 340px;
+}
+
+.textarea {
+    display: flex;
+}
+
+.textarea textarea {
+    outline: none;
+    resize: none;
+    border-bottom-right-radius: 15px;
+    border-top-left-radius: 30px;
+    border: 1px solid silver;
+    padding: 7px 20px;
+    font-family: Montserrat, sans-serif;
+    font-size: 17px;
+    width: 1220px;  /*1256*/
+    height: 75px;   /*96*/
+    transition: .5s;
+}
+
+.textarea textarea:focus {
+    box-shadow: 0 0 10px grey;
+}
+
+.textarea textarea::-webkit-scrollbar {
+    width: 15px;
+}
+
+.textarea textarea::-webkit-scrollbar-track {
+    background: rgba(175,175,175,0.2);
+}
+
+.textarea textarea::-webkit-scrollbar-thumb {
+    background: rgba(175,175,175,0.6);
+    border-radius: 15px;
+    border: 1px solid rgba(175,175,175,0.2);
+    box-shadow: 0 0 2px rgba(0, 0, 0, .2) inset;
+}
+
+.textarea textarea::-webkit-scrollbar-thumb:hover {
+    background: rgba(175,175,175,0.7);
+}
+
+.textarea textarea::-webkit-scrollbar-thumb:active {
+    background: rgba(175,175,175,0.8);
+}
+
+.button button {
+    margin-top: 1px;
+    background: whitesmoke;
+    padding: 5px 15px;
+    border-radius: 30px;
+    border: 2px rgba(255,171,15,0.8) solid;
+    transition: 0.4s;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: Montserrat, sans-serif;
+    width: 1256px;
+}
+
+.button button:hover {
+    border-color: whitesmoke;
+}
+
+.button button:active {
+    background: #e9e9e9;
+    border-color: #e9e9e9;
+}
+
+.button button:focus {
+    /*outline-offset: 1px;*/
+    outline-color: darkgoldenrod;
+    transition: .5s;
+    outline-width: medium;
+}
+
+.emoji {
+    margin-left: 5px;
+    position: relative;
+    height: fit-content;
+}
+
+.emojiEyes::before,
+.emojiEyes::after {
+    content: '';
+    position: absolute;
+    width: 3px;
+    height: 3px;
+    top: 30%;
+    background: silver;
+    border-radius: 50%;
+    pointer-events: none;
+}
+
+.emojiEyes::before {
+    left: 25%;
+}
+
+.emojiEyes::after {
+    right: 25%;
+}
+
+.emojiSmiley {
+    position: absolute;
+    border: 1px transparent solid;
+    border-radius: 50%;
+    border-bottom-color: silver;
+    width: 10px;
+    height: 7px;
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+    pointer-events: none;
+}
+
+.emojiButton {
+    width: 20px;
+    height: 20px;
+    background: yellow;
+    border-radius: 50%;
+    border: 1px rgba(255,171,15,0.8) solid;
+    transition: .4s;
+    cursor: pointer;
+}
+
+.emojiButton:hover {
+    border-color: whitesmoke;
+}
+
+.emojiButton:focus {
+    outline: none;
+    box-shadow: 0 0 10px grey;
+}
+
+.emojiButtonPressed {
+    background: #2a2a2a;
+    box-shadow: 0 0 10px grey;
+}
+
+.emojiButtonPressed:hover {
+    border-color: #2a2a2a;
+}
+
+.emojiPicker {
+    position: absolute;
+    top: 75%;
+    left: 80%;
+}

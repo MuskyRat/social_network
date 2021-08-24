@@ -1,0 +1,61 @@
+.App {
+  background: whitesmoke;
+  display: grid;
+  height: 98vh;
+  width: 98vw;
+  padding: 1vh 1vw;
+  grid-gap: 5px;
+  grid-template-columns: 4fr 30fr;
+  grid-template-rows: 3fr 30fr;
+  grid-template-areas:
+    'h h'
+    'n m';
+
+}
+
+.header {
+  grid-area: h;
+  background: #2a2a2a;
+  display: grid;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.main {
+  grid-area: m;
+  background: rgba(255,171,15,0.8);
+  display: grid;
+  overflow-y: auto;
+  position: relative;
+}
+
+.nav {
+  grid-area: n;
+  background: #2a2a2a;
+  display: grid;
+}
+
+.main::-webkit-scrollbar {
+  width: 15px;
+}
+
+.main::-webkit-scrollbar-track {
+  background: whitesmoke;
+  border: 1px solid silver;
+  /*border-radius: 7px;*/
+}
+
+.main::-webkit-scrollbar-thumb {
+  background: rgba(175,175,175,0.6);
+  border-radius: 7px;
+  border: 1px solid silver;
+  box-shadow: 0 0 2px rgba(0, 0, 0, .2) inset;
+}
+
+.main::-webkit-scrollbar-thumb:hover {
+  background: rgba(175,175,175,0.7);
+}
+
+.main::-webkit-scrollbar-thumb:active {
+  background: rgba(175,175,175,0.8);
+}

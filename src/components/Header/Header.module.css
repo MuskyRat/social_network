@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+
+.wrapper {
+    color: white;
+    display: flex;
+    font-family: Montserrat, sans-serif;
+}
+
+.logo {
+    width: 12%;
+    position: relative;
+    /*border: 1px solid #2a2a2a;*/
+}
+
+.logo img {
+    position: absolute;
+    max-width: 100%;
+    max-height: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.loginInfo {
+    width: 88%;
+}
+
+.login,
+.logout {
+    max-width: 100%;
+    height: 100%;
+    padding-right: 40px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.login button,
+.logout button {
+    background: whitesmoke;
+    margin-left: 10px;
+    border: 1px #2a2a2a solid;
+    width: 92px;
+    height: 27px;
+    border-radius: 30px;
+    font-size: 14px;
+    font-weight: 600;
+    /*box-shadow: inset 0 0 2px;*/
+    cursor: pointer;
+    transition: .4s;
+}
+
+.login button:hover,
+.logout button:hover {
+    border-color: whitesmoke;
+}
+
+.login button:active,
+.logout button:active {
+    background: beige;
+    border-color: beige;
+}
+
+.login button:focus,
+.logout button:focus {
+    outline-offset: 2px;
+    outline-color: goldenrod;
+    transition: .5s;
+    outline-width: medium;
+    -moz-outline-color: goldenrod;
+}
+
+.logout span {
+    color: gold;
+}
+
+.login {
+    max-width: 100%;
+    height: 100%;
+    padding-right: 40px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
